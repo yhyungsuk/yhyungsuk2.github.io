@@ -31,11 +31,25 @@
     <style>
         body {
             background: black;
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            width: 100vw;
+            height: 100vh;
         }
-        
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+
+        @media screen and (orientation:landscape) {
+            img {
+                width: initial;
+                height: 90%;
+            }
+        }
     </style>
 </head>
 <body>
